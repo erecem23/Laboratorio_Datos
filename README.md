@@ -76,7 +76,7 @@ The full-data metrics in this README were recalculated directly from the final w
 
 ## Power BI
 
-The original `.pbix` file was not found in the recovered project folder. The original report and presentation nevertheless document that Power BI was used for geographic, vehicle, model-year and gender visualizations. fileciteturn42file0L372-L396
+The original `.pbix` file was not found in the recovered project folder. The original report and presentation nevertheless document the use of Power BI for geographic, vehicle, model-year and gender visualizations.
 
 ## Tools
 
