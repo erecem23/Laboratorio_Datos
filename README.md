@@ -4,8 +4,6 @@ Portfolio project based on public vehicle-theft records from Argentina's **Direc
 
 The project focuses on the **data pipeline** rather than only the final charts: dataset integration, cleaning, quality checks, exploratory analysis, relational storage, SQL queries and dashboarding.
 
-![Power BI dashboard](dashboard/dashboard_vehicles.jpg)
-
 ## Project overview
 
 The final processed workbook contains **83,840 records and 34 columns**. The original written report states 83,480 records, while the final workbook and Power BI dashboard show 83.84k; this repository uses the count verified directly from the final workbook.
@@ -47,7 +45,7 @@ The original project also flagged suspicious holder birth years. Reapplying the 
 - The most frequent cleaned makes are **Volkswagen (17,350)**, **Chevrolet (11,534)**, **Fiat (11,361)** and **Renault (11,221)**.
 - The leading make/model combinations are **Volkswagen Gol (8,366)**, **Chevrolet Corsa (3,544)**, **Renault Kangoo (2,294)** and **Toyota Hilux (2,168)**.
 - Among records identified as male or female, **66.7% correspond to male holders**.
-- A chi-square test between vehicle origin and holder gender is statistically significant, but the association is **very small** (Cramér's V ≈ 0.046). This distinction between statistical significance and effect size is added in the portfolio revision.
+- A chi-square test between vehicle origin and holder gender is statistically significant, but the association is **very small** (Cramér's V ≈ 0.046).
 
 ## Repository structure
 
@@ -65,8 +63,6 @@ The original project also flagged suspicious holder birth years. Reapplying the 
 ├── sql/
 │   ├── original_queries.sql
 │   └── analysis.sql
-├── dashboard/
-│   └── dashboard_vehicles.jpg
 ├── docs/
 │   └── methodology.md
 └── requirements.txt
@@ -74,9 +70,13 @@ The original project also flagged suspicious holder birth years. Reapplying the 
 
 ## Reproducible notebook
 
-The notebook uses a **deterministic 30-row sample** extracted from the final processed workbook. The sample is included so the repository can be cloned and executed without distributing the 26 MB Excel file.
+The notebook uses a **deterministic 10-row sample** extracted from the final processed workbook. The sample is included so the repository can be cloned and executed without distributing the 26 MB Excel file.
 
 The full-data metrics in this README were recalculated directly from the final workbook and are not inferred from the sample.
+
+## Power BI
+
+The original `.pbix` file was not found in the recovered project folder. The original report and presentation nevertheless document that Power BI was used for geographic, vehicle, model-year and gender visualizations. fileciteturn42file0L372-L396
 
 ## Tools
 
@@ -84,4 +84,4 @@ The full-data metrics in this README were recalculated directly from the final w
 
 ## Context
 
-Originally developed for **Laboratorio de Datos**, Licenciatura en Análisis y Gestión de Datos, Universidad Nacional de San Luis. The repository was later reorganized as a data-analysis portfolio case study, preserving the original R/SQL files while adding a reproducible notebook and clearer methodological documentation.
+Originally developed for **Laboratorio de Datos**, Licenciatura en Análisis y Gestión de Datos, Universidad Nacional de San Luis. The repository was later reorganized as a data-analysis portfolio case study, preserving the recovered R/SQL work while adding a reproducible notebook and clearer methodological documentation.
