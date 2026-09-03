@@ -18,7 +18,7 @@ The original workflow documented transformations in Power Query and R. The main 
 - inspection of suspicious holder birth years and unusually old vehicle model years;
 - recoding of detailed vehicle types into broader analytical categories.
 
-The original R code is preserved in `scripts/original_analysis.R`. A cleaned version suitable for portfolio review is included in `scripts/cleaning_eda_refactored.R`.
+The recovered R code is preserved in `scripts/original_analysis.R`. A cleaned version suitable for portfolio review is included in `scripts/cleaning_eda_refactored.R`.
 
 ## 3. Data-quality checks
 
@@ -36,12 +36,12 @@ The original project found a statistically significant chi-square association be
 
 ## 5. Storage and SQL
 
-The processed data were stored in SQLite using DB Browser for SQLite. The repository includes both the original SQL file and a reorganized set of analytical queries.
+The processed data were stored in SQLite using DB Browser for SQLite. The repository includes both the recovered SQL file and a reorganized set of analytical queries.
 
 ## 6. Visualization
 
-Power BI was used to explore geographic concentration, makes/models, model years and gender. The `.pbix` file was not present in the available project folder, so this repository preserves a dashboard screenshot extracted from the final presentation rather than claiming to include the original Power BI file.
+Power BI was used to explore geographic concentration, makes/models, model years and gender. The `.pbix` file was not present in the recovered project folder. The original report and presentation still document the Power BI stage, but the repository does not claim to include the `.pbix` file.
 
 ## 7. Reproducibility
 
-The notebook runs on a 30-row deterministic sample. Full-dataset statistics reported in the README were recalculated from the final Excel workbook.
+The notebook runs on a 10-row deterministic sample. Full-dataset statistics reported in the README were recalculated from the final Excel workbook.
